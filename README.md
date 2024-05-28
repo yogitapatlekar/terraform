@@ -109,4 +109,4 @@ To download terraform on windows, refer below page;
 https://developer.hashicorp.com/terraform/install#windows
 ```
 
->>>>>>> 1e9bebde9ea2bb2bbbc5a2373ad02004b72171e3
+>>>>>>> 1e9bebde9ea2bb2bbbc5a2373ad02004b72171e3 
