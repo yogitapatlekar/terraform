@@ -1,9 +1,4 @@
-/*
-<BLOCK TYPE> "<BLOCK NAME>" "<BLOCK NAME>" {
-    #block body 
-<IENTIFIER> = <EXPRESSION> > # Argument 
- }
-*/
+
 
 provider "aws" {
   region = "us-east-1"
