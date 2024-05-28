@@ -74,6 +74,21 @@ Remote Backend: A remote backend is a storage location for your Terraform state 
 
 These are some of the essential terms you'll encounter when working with Terraform. As you start using Terraform for your infrastructure provisioning and management, you'll become more familiar with these concepts and how they fit together in your IaC workflows.
 
+### Block types 
+ 1. Provider 
+ 2. Terraform 
+ 3. Resource 
+ 4. Data
+ 5. Variable 
+ 6. Output 
+ 7. Modules 
+
+### Terraform lifecycle 
+init - to initialise terraform configuration 
+plan - to get blueprint of infra configuration 
+apply - to implement the infra configuration 
+destroy - to destroy all the infra resources 
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ### Install Terraform :
@@ -106,7 +121,9 @@ $ sudo yum -y install terraform
 ### Windows
 ```
 To download terraform on windows, refer below page;
-https://developer.hashicorp.com/terraform/install#windows
+https://developer.hashicorp.com/terraform/install#windows 
+
+
 ```
 
 >>>>>>> 1e9bebde9ea2bb2bbbc5a2373ad02004b72171e3 
