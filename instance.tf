@@ -29,8 +29,9 @@ resource "aws_security_group" "allow_tls" {
 }
 
 data "aws_ami" "my_ami" {
-  most_recent      = true
-  owners           = ["099720109477"] # Canonical (Ubuntu) account ID
+  most_recent = true
+  owners      = ["099720109477"] # Canonical (Ubuntu) account ID
+
   filter {
     name   = "name"
     values = ["ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-pro-server-20240423"]
@@ -38,10 +39,10 @@ data "aws_ami" "my_ami" {
 }
 
 resource "aws_instance" "instance1" {
-  ami                         = data.aws_ami.my_ami.id
-  instance_type               = var.instance_type
-  vpc_security_group_ids      = [aws_security_group.allow_tls.id]
-  key_name                    = "1"
+  ami                    = data.aws_ami.my_ami.id
+  instance_type          = var.instance_type
+  vpc_security_group_ids = [aws_security_group.allow_tls.id]
+  key_name               = "1"
 
   tags = {
     Name = "allow_tls"
@@ -51,11 +52,11 @@ resource "aws_instance" "instance1" {
 
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = "t4g.micro" # Changed to an arm64 compatible instance type
 }
 
 output "hellow" {
-  value = "hello world" 
+  value = "hello world" # Correct spelling
 }
 
 output "public_ip" {
