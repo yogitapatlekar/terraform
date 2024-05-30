@@ -11,7 +11,7 @@ terraform {
 }
 
 module "new_vpc" {
-  source              = "./module/vpc"
+  source              = "module/vpc"
   vpc_cidr            = var.vpc_cidr
   project             = var.project
   env                 = var.env
