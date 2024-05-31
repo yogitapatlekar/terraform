@@ -1,7 +1,12 @@
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
+
 resource "aws_instance" "app_server" {
-  ami           = "al2023-ami-2023.4.20240528.0-kernel-6.1-x86_64"
+  ami           = "ami-00beae93a2d981137"  # Replace with a valid AMI ID
   instance_type = "t2.micro"
+
+  tags = {
+    Name = "AppServer"
+  }
 }
