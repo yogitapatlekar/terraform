@@ -7,7 +7,7 @@ resource "aws_vpc" "this_vpc" {
 
 resource "aws_subnet" "this_subnet_pub" {
   vpc_id                  = aws_vpc.this_vpc.id  
-  availability_zone       = "us-east-1"
+  availability_zone       = "us-east-1a"
   cidr_block              = var.this_subnet_pub_cidr_block // "12.11.0.0/17"
   map_public_ip_on_launch = var.this_subnet_pub_map_ip // true
   tags = {
@@ -17,7 +17,7 @@ resource "aws_subnet" "this_subnet_pub" {
 
 resource "aws_subnet" "this_subnet_private1" {
   vpc_id                  = aws_vpc.this_vpc.id
-  availability_zone       = "us-east-1"
+  availability_zone       = "us-east-1a"
   cidr_block              = var.this_subnet_private1_cidr_block // "12.11.128.0/19"
   map_public_ip_on_launch = var.this_subnet_private_map_ip // false
   tags = {
@@ -27,7 +27,7 @@ resource "aws_subnet" "this_subnet_private1" {
 
 resource "aws_subnet" "this_subnet_private2" {
   vpc_id                  = aws_vpc.this_vpc.id
-  availability_zone       = "us-east-1"
+  availability_zone       = "us-east-1a"
   cidr_block              = var.this_subnet_private2_cidr_block // "12.11.192.0/20"
   map_public_ip_on_launch = var.this_subnet_private_map_ip // false
   tags = {
