@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 
   key_name = "1" 
 
-  security_group = ["sg-0c4bf15d5abd926d2"]
+  security_groups = ["sg-0c4bf15d5abd926d2"]
 
   tags = {
     Name = "HelloWorld"
