@@ -13,7 +13,7 @@ terraform {
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow SSH for all network"
-  vpc_id      = "vpc-0922d23ff557a0bb5" # VPC ID should be a string
+  vpc_id      = "vpc-0e3f914a30b59bed7" # VPC ID should be a string
 
   ingress {
     description = "SSH rule"
