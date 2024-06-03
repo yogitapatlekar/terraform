@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "cbz-online-terraform12"
+    bucket = "yogita123"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
