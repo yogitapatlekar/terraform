@@ -26,7 +26,7 @@ module "ec2" {
     this_aws_instance_instance_type  = "t2.micro"
     //this_aws_instance_subnet = module.aws_vpc.aws_subnet_this_public
     this_aws_instance_key_name = "delete_oregon_anup"
-    this_aws_instance_availability_zone = "us-west-2b"
+    this_aws_instance_availability_zone = "us-east-1b"
     this_aws_instance_volume_size = 15
     this_aws_instance_count = 2
     this_aws_instance_user_data_base64 = true
