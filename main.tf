@@ -24,7 +24,7 @@ module "ec2" {
     source = "./module/ec2"
     this_aws_instance_ami = "ami-00beae93a2d981137"
     this_aws_instance_instance_type  = "t2.micro"
-    this_aws_instance_subnet = module.aws_vpc.public_subnets[0]
+    //this_aws_instance_subnet = module.aws_vpc.public_subnets[0]
     this_aws_instance_key_name = "me"
     this_aws_instance_availability_zone = "us-east-1a"
     this_aws_instance_volume_size = 15
