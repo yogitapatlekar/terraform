@@ -19,6 +19,7 @@ module "vpc" {
     this_def_Route_example_tag = "default" 
 } 
 */
+
 module "ec2" {
     source = "./module/ec2"
     this_aws_instance_ami = "ami-0eb5115914ccc4bc2"
