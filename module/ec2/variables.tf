@@ -11,7 +11,7 @@ variable "this_aws_instance_key_name" {
 variable "this_aws_instance_availability_zone" {
     type = string
 }
-variable "this_aws_instance_subnet " {
+variable "this_aws_instance_subnet" {
     type = string
 }
 variable "this_aws_instance_volume_size" {
