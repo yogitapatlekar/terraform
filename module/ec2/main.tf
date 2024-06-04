@@ -5,7 +5,7 @@ resource "aws_instance" "this_aws_instance" {
   vpc_security_group_ids =  [aws_security_group.this_sg.id]
 //[var.this_aws_instance_sg_id]
   availability_zone      = var.this_aws_instance_availability_zone
-  
+
   root_block_device {
     volume_size = var.this_aws_instance_volume_size
   }
@@ -26,7 +26,7 @@ resource "aws_instance" "this_aws_instance" {
 }
 
 resource "aws_security_group" "this_sg" {
-  vpc_id = var.this_sg_vpc_id
+ // vpc_id = var.this_sg_vpc_id
 
   ingress {
     from_port   = 80
